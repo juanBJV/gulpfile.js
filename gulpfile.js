@@ -101,6 +101,8 @@ gulp.task('serve-dist', function() {
     .on('listening', function () {
       console.log('Started distribution preview server on http://localhost:9000');
     });
+    
+    require('opn')('http://localhost:9000');
 
 });
 
